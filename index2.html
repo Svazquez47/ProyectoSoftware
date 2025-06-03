@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="codigo.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="imagenes/comercial neumaticos.png" alt="Comercial Neumaticos">
+    </div>
+    <div class="borde">
+        <p>Nuestra sucursal:</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13622.47459552557!2d-64.1812261128418!3d-31.3970771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432980fd65e4a29%3A0x86eb7e954ad73728!2sComercial%20Neum%C3%A1ticos%20%7C%20Venta%20de%20Neum%C3%A1ticos%20y%20Servicios!5e0!3m2!1ses!2sar!4v1748722136963!5m2!1ses!2sar"
+            width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Blvd. Bulnes 2092</p>
+        <br>
+        <p>HORARIOS DE ATENCION:</p>
+        <p>De Lunes a Viernes de 8:30 am a 19pm. Sábados: 8:30 am a 13:30pm</p>
+    </div>
+    <h1>COMPRE SU NEUMATICO AHORA!</h1>
+    <div class="ruedas">
+        <form>
+            <p>
+                ANCHO:
+                <select name="ancho" id="ancho">
+                    <option value="165">165</option>
+                    <option value="175">175</option>
+                    <option value="185">185</option>
+                    <option value="195">195</option>
+                    <option value="275">275</option>
+                    <option value="315">315</option>
+                </select>
+            </p>
+            <p>
+                ALTO
+                <select name="alto" id="alto">
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="55">55</option>
+                    <option value="60">60</option>
+                    <option value="65">65</option>
+                    <option value="70">70</option>
+                </select>
+            </p>
+            <p>
+                RODADO
+                <select name="rodado" id="rodado">
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+            </p>
+            <p>
+                MARCA
+                <select name="marca" id="marca">
+                    <option value="FIRESTONE">FIRESTONE</option>
+                    <option value="FATE">FATE</option>
+                    <option value="PIRELLI">PIRELLI</option>
+                    <option value="BRIDGESTONE">BRIDGESTONE</option>
+                    <option value="DUNLOP">DUNLOP</option>
+                </select>
+            </p>
+        </form>
+        <button onclick="precio()">CALCULAR PRECIO</button>
+        <p id="resultado"></p>
+        <img src="imagenes/medidas.png" alt="medidas">
+    </div>
+    <img src="imagenes/Is Maintaining Our Tyre An Essential Element_.jpg" height="850px" width="430px"
+        style="position: absolute; right: 0%; top: 35%;">
+    <div class="pedido">
+        <h2>CONTACTENOS</h2>
+        <p>CAMBIO DE ACEITE, SERVICE Y VENTA DE NEUMATICOS!</p>
+        <form>
+            <p>
+                NOMBRE:
+                <input type="text0" name="nombre" id="nombre" placeholder="indique su nombre" />
+            </p>
+            <p>
+                APELLIDO:
+                <input type="text" name="apellido" id="apellido" placeholder="indique su apellido" />
+            </p>
+            <p>
+                TELEFONO:
+                <input type="number" name="telefono" id="telefono" placeholder="indique tu DNI" />
+            </p>
+            <p>
+                EMAIL:
+                <input type="email" name="email" id="email" placeholder="indique su email">
+            </p>
+            <p>Dejenos aqui su consulta a detalle!</p>
+            <textarea name="explique" id="texto"></textarea>
+        </form>
+        <button onclick="consultar()">CONSULTAR</button>
+        <p id="consulta"></p>
+    </div>
+</body>
+
+</html>
