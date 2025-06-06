@@ -25,8 +25,9 @@ function consultar() {
     } else {
         document.getElementById("consulta").textContent =
             "SU CONSULTA FUE RECIBIDA!";
+            window.open('https://wa.me/5493512660001', '_blank');
+
     }
-    window.open('https://wa.me/5493512660001', '_blank');
 }
 function precio() {
     var ancho = document.getElementById("ancho").value;
